@@ -9,12 +9,12 @@ const AccordItem = ({ details, ifOpen, handleFunction }) => {
         className="p-[10px] bg-sky-600 cursor-pointer flex justify-between"
         onClick={handleFunction}
       >
-        <span>{details.quest}</span>
+        <span>{details.Question}</span>
 
         {ifOpen ? <FaMinus /> : <FaPlus />}
       </div>
       <div className={`px-[10px] bg-sky-200 ${ifOpen ? "block" : "hidden"}`}>
-        {details.answer}
+        {details.Ans}
       </div>
     </div>
   );
